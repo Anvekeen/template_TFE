@@ -1,0 +1,164 @@
+/* reset */
+html, body, header, nav, footer, main, section, div, span, h1, h2, h3, h4, h5, h6, p, a, figure, figcaption, picture, img, ul, li, dl, dt, dd, form, label, input, textarea, button, svg, strong, b, address, time, table, caption, thead, tbody, th, td, tr
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a
+{
+	display: inline-block;
+}
+ul
+{
+	list-style: none;
+}
+:root
+{
+    /* couleurs */
+    --couleur-froid: rgb(127, 148, 227);
+    --couleur-chaud: rgb(42, 13, 17);
+    --couleur-alert: red;
+    --couleur-succes: green;
+
+    /* espaces */
+    --espace-xxl: 20vw;
+    --espace-s: 3vw;
+    --espace-xs: 1vw;
+}
+/* base */
+html
+{
+    overflow-x: hidden;
+	font-size: clamp(16px, 1vw, 1vw);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: 100vw auto;
+}
+main
+{
+    padding: var(--espace-s) var(--espace-xxl);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+h1
+{
+    margin-bottom: 2rem;
+}
+p:not(:last-of-type)
+{
+    margin-bottom: 1rem;
+}
+button
+{
+    padding: var(--espace-xs);
+    border-radius: 8rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--couleur-chaud);
+}
+button:hover
+{
+    cursor: pointer;
+}
+/* header */
+header
+{
+    padding: var(--espace-xs) var(--espace-xxl);
+    background-color: var(--couleur-froid);
+}
+header nav ul
+{
+    display: flex;
+}
+header nav li:not(:last-of-type)
+{
+    margin-right: 2rem;
+}
+header nav li:last-of-type
+{
+    margin-left: auto;
+}
+header nav a
+{
+    text-decoration: none;
+    color: var(--couleur-chaud);
+}
+.active
+{
+    font-weight: bold;
+}
+/* footer */
+footer
+{
+    padding: var(--espace-xs) var(--espace-xxl);
+    background-color: var(--couleur-froid);
+}
+/* formulaires */
+form
+{
+    max-width: 500px;
+    width: 100%;
+}
+form > p:first-of-type
+{
+    text-align: right;
+}
+form > p:first-of-type > span
+{
+    color: var(--couleur-alert);
+}
+form div
+{
+    margin-bottom: 0.5rem;
+}
+form div:last-of-type
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form label
+{
+    margin-bottom: 0.2rem;
+    display: block;
+}
+form label.required::after
+{
+    content: '*';
+    color: var(--couleur-alert)
+}
+form input, form textarea
+{
+    padding: 0.3rem;
+    border: 1px solid var(--couleur-froid);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+form textarea
+{
+    resize: vertical;
+    min-height: 150px;
+}
+form p.alert, form p.succes
+{
+    font-size: 0.8em;
+}
+form p.alert
+{
+    color: var(--couleur-alert);
+}
+form p.succes
+{
+    color: var(--couleur-succes);
+}

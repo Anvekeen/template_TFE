@@ -1,0 +1,22 @@
+{
+    "requis": "Ce champ est requis!",
+    "email": "Veuillez entrer une adresse mail valide!",
+    "minMaxLength": "Ce champ doit comprendre entre %0% et %1% caractères!",
+    "minLength": "Ce champ doit avoir au plus %0% caractères!",
+    "maxLength": "Ce champ doit avoir au moins %0% caractères!",
+    "confirmation": "Les %0% ne correspondent pas!",
+    "unique": "Cette entrée existe déjà!",
+    "champs_echec": "Veuillez remplir les champs correctement!",
+    "envoi_succes": "Le formulaire a bien été envoyé!",
+    "connexion_echec": "Utilisateur inconnu ou mot de passe incorrect!",
+    "connexion_succes": "Connexion réussie!",
+    "inscription_succes": "Inscription réalisée avec succès!",
+    "generique_echec": "Un problème est servenu, veuillez nous en excuser!",
+    "envoi_codeActivation": "Un message avec un code de validation vous a été envoyé!",
+    "activationCompte_succes": "Compte activé avec succès!",
+    "activationCompte_echec": "Code invalide!",
+    "nouvelUtilisateur_succes": "Nouvel utilisateur créé avec succès!",
+    "supDansTable_succes": "Suppression réalisée avec succès!",
+    "supDansTable_echec": "Suppression impossible!",
+    "maj_succes": "Mise à jour réalisée avec succès!"
+}

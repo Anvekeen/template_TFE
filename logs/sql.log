@@ -1,0 +1,1 @@
+[2023-11-18 22:10:31] Erreur d'exécution de requête : SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ':pseudo, :email, :motDePasse)' à la ligne 1
